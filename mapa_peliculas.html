@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5c9c0e08ba4c0c661e1b3a4f3aa8a197 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5c9c0e08ba4c0c661e1b3a4f3aa8a197" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5c9c0e08ba4c0c661e1b3a4f3aa8a197 = L.map(
+                "map_5c9c0e08ba4c0c661e1b3a4f3aa8a197",
+                {
+                    center: [34.73551525968677, -117.77579830583699],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c3cba20971ef6323b4bf2a15945c13bd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c3cba20971ef6323b4bf2a15945c13bd.addTo(map_5c9c0e08ba4c0c661e1b3a4f3aa8a197);
+        
+    
+            var marker_832f7e5cd251ba57fea344a0e98ef16f = L.marker(
+                [34.73551525968677, -117.77579830583699],
+                {
+}
+            ).addTo(map_5c9c0e08ba4c0c661e1b3a4f3aa8a197);
+        
+    
+            var icon_0294f4fd17a3a2858d187bee2ec1e264 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15d3e6659b63d2b5e5a7114bd5ba9923 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f15bcc2bf5e2f92d25ff78e635663ecb = $(`<div id="html_f15bcc2bf5e2f92d25ff78e635663ecb" style="width: 100.0%; height: 100.0%;">         <h3>Kill Bill vol. 1</h3>         <p><b>Director:</b> Quentin Tarantino</p>         <p><b>Año de lanzamiento:</b> 2003</p>         <p><b>Duración (minutos):</b> 111</p>         <p><b>Inversión (millones USD):</b> 30</p>         <p><b>Personajes principales:</b> La Novia, Bill, O-Ren Ishii, Vernita Green, Elle Driver, Budd</p>         </div>`)[0];
+                popup_15d3e6659b63d2b5e5a7114bd5ba9923.setContent(html_f15bcc2bf5e2f92d25ff78e635663ecb);
+            
+        
+
+        marker_832f7e5cd251ba57fea344a0e98ef16f.bindPopup(popup_15d3e6659b63d2b5e5a7114bd5ba9923)
+        ;
+
+        
+    
+    
+                marker_832f7e5cd251ba57fea344a0e98ef16f.setIcon(icon_0294f4fd17a3a2858d187bee2ec1e264);
+            
+    
+            var marker_b58adbbc99d2adc7fb30eaa974c6571f = L.marker(
+                [30.379993965481948, 130.5742336944563],
+                {
+}
+            ).addTo(map_5c9c0e08ba4c0c661e1b3a4f3aa8a197);
+        
+    
+            var icon_077e659e3abd08ef932d1864ca0b8d64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1218e6c3c5abbd9090be4cba14605bf3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_64b2d06c4641350ef1de08f4957efbc8 = $(`<div id="html_64b2d06c4641350ef1de08f4957efbc8" style="width: 100.0%; height: 100.0%;">         <h3>La princesa Mononoke</h3>         <p><b>Director:</b> Hayao Miyazaki</p>         <p><b>Año de lanzamiento:</b> 1997</p>         <p><b>Duración (minutos):</b> 134</p>         <p><b>Inversión (millones USD):</b> 23.5</p>         <p><b>Personajes principales:</b> Ashitaka, San, Lady Eboshi, Jiko-bô, Moro</p>         </div>`)[0];
+                popup_1218e6c3c5abbd9090be4cba14605bf3.setContent(html_64b2d06c4641350ef1de08f4957efbc8);
+            
+        
+
+        marker_b58adbbc99d2adc7fb30eaa974c6571f.bindPopup(popup_1218e6c3c5abbd9090be4cba14605bf3)
+        ;
+
+        
+    
+    
+                marker_b58adbbc99d2adc7fb30eaa974c6571f.setIcon(icon_077e659e3abd08ef932d1864ca0b8d64);
+            
+    
+            var marker_7efe304310865b9ab176cfb7c8e6306d = L.marker(
+                [34.148643308957396, -118.33635946326979],
+                {
+}
+            ).addTo(map_5c9c0e08ba4c0c661e1b3a4f3aa8a197);
+        
+    
+            var icon_a3514fec4ca6fd3a6b27be5a81794b58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7624e8ddfcf47ee4a7d5330076a1b5b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_133c0be813ba25e776a6b96c6ae3d0c7 = $(`<div id="html_133c0be813ba25e776a6b96c6ae3d0c7" style="width: 100.0%; height: 100.0%;">         <h3>Inteligencia Artificial</h3>         <p><b>Director:</b> Steven Spielberg</p>         <p><b>Año de lanzamiento:</b> 2001</p>         <p><b>Duración (minutos):</b> 146</p>         <p><b>Inversión (millones USD):</b> 100</p>         <p><b>Personajes principales:</b> David, Monica Swinton, Henry Swinton, Gigolo Joe, Professor Hobby</p>         </div>`)[0];
+                popup_7624e8ddfcf47ee4a7d5330076a1b5b0.setContent(html_133c0be813ba25e776a6b96c6ae3d0c7);
+            
+        
+
+        marker_7efe304310865b9ab176cfb7c8e6306d.bindPopup(popup_7624e8ddfcf47ee4a7d5330076a1b5b0)
+        ;
+
+        
+    
+    
+                marker_7efe304310865b9ab176cfb7c8e6306d.setIcon(icon_a3514fec4ca6fd3a6b27be5a81794b58);
+            
+    
+            var marker_f3a894d3f39e459a13bd0c75849f9c4f = L.marker(
+                [44.93967908883684, -123.00327245520936],
+                {
+}
+            ).addTo(map_5c9c0e08ba4c0c661e1b3a4f3aa8a197);
+        
+    
+            var icon_4b56dfac9d1aaca22622cea6f6eee096 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_afebb263c0cfcbb7272ca20266261dd7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0887e12395ae811b8dcb2807282d32d0 = $(`<div id="html_0887e12395ae811b8dcb2807282d32d0" style="width: 100.0%; height: 100.0%;">         <h3>Atrapado sin salida</h3>         <p><b>Director:</b> Miloš Forman</p>         <p><b>Año de lanzamiento:</b> 1975</p>         <p><b>Duración (minutos):</b> 133</p>         <p><b>Inversión (millones USD):</b> 4.5</p>         <p><b>Personajes principales:</b> Randle McMurphy, Nurse Ratched, Chief Bromden, Billy Bibbit, Dale Harding</p>         </div>`)[0];
+                popup_afebb263c0cfcbb7272ca20266261dd7.setContent(html_0887e12395ae811b8dcb2807282d32d0);
+            
+        
+
+        marker_f3a894d3f39e459a13bd0c75849f9c4f.bindPopup(popup_afebb263c0cfcbb7272ca20266261dd7)
+        ;
+
+        
+    
+    
+                marker_f3a894d3f39e459a13bd0c75849f9c4f.setIcon(icon_4b56dfac9d1aaca22622cea6f6eee096);
+            
+    
+            var marker_c281ebed1d3e66089d9be13ad5ef5451 = L.marker(
+                [34.157378613332824, -118.28500360533745],
+                {
+}
+            ).addTo(map_5c9c0e08ba4c0c661e1b3a4f3aa8a197);
+        
+    
+            var icon_9a4b599044d0c7598a56139283fb714a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_472ed8674a8320d17cf484bf0d8eb630 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_970a681e5de007e7887c2d9595e20459 = $(`<div id="html_970a681e5de007e7887c2d9595e20459" style="width: 100.0%; height: 100.0%;">         <h3>Shrek</h3>         <p><b>Director:</b> Andrew Adamson, Vicky Jenson</p>         <p><b>Año de lanzamiento:</b> 2001</p>         <p><b>Duración (minutos):</b> 90</p>         <p><b>Inversión (millones USD):</b> 60</p>         <p><b>Personajes principales:</b> Shrek, Burro, Princesa Fiona, Lord Farquaad, Dragon</p>         </div>`)[0];
+                popup_472ed8674a8320d17cf484bf0d8eb630.setContent(html_970a681e5de007e7887c2d9595e20459);
+            
+        
+
+        marker_c281ebed1d3e66089d9be13ad5ef5451.bindPopup(popup_472ed8674a8320d17cf484bf0d8eb630)
+        ;
+
+        
+    
+    
+                marker_c281ebed1d3e66089d9be13ad5ef5451.setIcon(icon_9a4b599044d0c7598a56139283fb714a);
+            
+</script>
+</html>
