@@ -204,11 +204,11 @@ else:
 
     # Mostramos el gráfico seleccionado
     if grafico_seleccionado == 'Gráfico de barras verticales sobre el promedio de tarjetas rojas recibidas como local por equipo de la Liga Española':
-       st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
         st.image("gráficodebarras.png", caption='Gráfico de tarjetas rojas como local', width=500)
         pass
     elif grafico_seleccionado == 'Histograma de goles anotados y recibidos como visitante de local en Barcelona':
-       st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
         st.image("histogramapc3.png", caption='Histograma sobre los goles anotados y recibidos', width=500)
         pass
     elif grafico_seleccionado == 'Piechart de los resultados de los partidos de Real Madrid como local':
@@ -216,7 +216,7 @@ else:
         st.image("piechart.png", caption='Piechart de partidos ganados, empatados y perdidos', width=500)
         pass
     elif grafico_seleccionado == 'Mapa de mis películas favoritas':
-       st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu mapa</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu mapa</div>", unsafe_allow_html=True)
         # Si "mapa_cusco.html" es un archivo HTML (no una imagen), debes mostrarlo con st.components.v1.html
         import streamlit.components.v1 as components
         with open("mapa_peliculas.html", "r", encoding="utf-8") as f:
@@ -254,3 +254,4 @@ else:
         #st_folium(mapa_cusco, width=700, height=500)
 
     
+
